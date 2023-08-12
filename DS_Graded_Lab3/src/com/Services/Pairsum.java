@@ -17,7 +17,7 @@ public class Pairsum {
 			return flag;
 		}
 		BinaryNode n = bst.search(targetsum - temp.data);
-		if (n != null && n.data != targetsum/2) {
+		if (n != null && n != temp) {
 			System.out.println("Two such nodes in the binary search tree whose sum is " + targetsum + " are " + "("
 					+ temp.data + " , " + n.data + ")");
 			flag = true;
